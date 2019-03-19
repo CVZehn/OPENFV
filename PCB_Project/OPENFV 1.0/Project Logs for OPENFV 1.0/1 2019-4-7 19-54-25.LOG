@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=SPI1_MISO Pin=U4-32
+Added Pin To Net: NetName=SPI1_MOSI Pin=U4-32
+Added Room: Name=F407VET6£¨Ö÷¿Ø£©
+Added Room: Name=ov7670µçÂ·£¨Æï·É£©

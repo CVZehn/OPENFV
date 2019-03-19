@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=SIOD Pin=U4-15
+Removed Pin From Net: NetName=SIOC Pin=U4-16
+Removed Pin From Net: NetName=RESET Pin=U4-82
+Removed Pin From Net: NetName=PWDN Pin=U4-83
+Added Pin To Net: NetName=SIOD Pin=U4-82
+Added Pin To Net: NetName=SIOC Pin=U4-84
+Added Pin To Net: NetName=RESET Pin=U4-86
+Added Pin To Net: NetName=PWDN Pin=U4-87
+Added Room: Name=F407VET6£¨Ö÷¿Ø£©
+Added Room: Name=ov7670µçÂ·£¨Æï·É£©
