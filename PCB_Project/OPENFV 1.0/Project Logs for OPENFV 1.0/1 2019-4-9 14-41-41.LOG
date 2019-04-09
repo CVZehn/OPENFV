@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=USART1-TX Pin=P3-3
+Removed Pin From Net: NetName=USART1-RX Pin=P3-4
+Added Pin To Net: NetName=USART1-RX Pin=P3-3
+Added Pin To Net: NetName=USART1-TX Pin=P3-4
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component C1 CAP
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component R4 Res1
