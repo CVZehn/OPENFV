@@ -1,0 +1,24 @@
+Added Component: Designator=U1(SOT23-5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U2(SOT23-5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U3(SOT23-5)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=5V Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-2
+Added Pin To Net: NetName=5V Pin=U1-3
+Added Pin To Net: NetName=NetC4_2 Pin=U1-4
+Added Pin To Net: NetName=NetC5_2 Pin=U1-5
+Added Pin To Net: NetName=5V Pin=U2-1
+Added Pin To Net: NetName=5V Pin=U2-2
+Added Pin To Net: NetName=5V Pin=U2-3
+Added Pin To Net: NetName=NetC9_2 Pin=U2-4
+Added Pin To Net: NetName=1.8V Pin=U2-5
+Added Pin To Net: NetName=5V Pin=U3-1
+Added Pin To Net: NetName=5V Pin=U3-2
+Added Pin To Net: NetName=5V Pin=U3-3
+Added Pin To Net: NetName=NetC13_2 Pin=U3-4
+Added Pin To Net: NetName=5V Pin=U3-5
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component U1 PAM3101
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component U2 PAM3101
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component U3 PAM3101

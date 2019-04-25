@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=SPI1_MOSI Pin=SPI-1
+Removed Pin From Net: NetName=SPI1_MISO Pin=SPI-2
+Removed Pin From Net: NetName=SPI1_SCK Pin=SPI-3
+Removed Pin From Net: NetName=SPI1_CS Pin=SPI-4
+Removed Pin From Net: NetName=SPI1_RS Pin=SPI-5
+Removed Pin From Net: NetName=SPI1_REST Pin=SPI-6
+Removed Pin From Net: NetName=GND Pin=SPI-7
+Removed Pin From Net: NetName=3.3V Pin=SPI-8
+Removed Member From Class: ClassName=F407VET6（主控） Member=SPI
+Change Component Footprint: Designator=P2 Old Footprint=PIN4-k New Footprint=PH1.25-4P
+Change Component Footprint: Designator=P3 Old Footprint=PIN4-k New Footprint=PH1.25-4P
+Change Component Comment : Designator=P2 Old Comment=P2 New Comment=Header 4
+Change Component Comment : Designator=P3 Old Comment=P3 New Comment=Header 4
+Change component parameters: Designator = "P2"; Footprint = "PH1.25-4P"; UniqueID = "\RHHNCIKV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P3"; Footprint = "PH1.25-4P"; UniqueID = "\HQIVIUQA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=J1(sip-8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=SPI1_MOSI Pin=J1-1
+Added Pin To Net: NetName=SPI1_MISO Pin=J1-2
+Added Pin To Net: NetName=SPI1_SCK Pin=J1-3
+Added Pin To Net: NetName=SPI1_CS Pin=J1-4
+Added Pin To Net: NetName=SPI1_RS Pin=J1-5
+Added Pin To Net: NetName=SPI1_REST Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J1-7
+Added Pin To Net: NetName=3.3V Pin=J1-8
+Added Member To Class: ClassName=F407VET6（主控） Member=Component J1 CON8
+Added Room: Name=F407VET6（主控）
+Added Room: Name=ov7670电路（骑飞）

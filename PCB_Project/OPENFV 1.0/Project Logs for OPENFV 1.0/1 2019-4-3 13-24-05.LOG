@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=*-0
+Removed Pin From Net: NetName=GND Pin=*-0
+Removed Pin From Net: NetName=GND Pin=*-0
+Removed Pin From Net: NetName=GND Pin=*-0
+Removed Pin From Net: NetName=GND Pin=P3-0
+Removed Pin From Net: NetName=GND Pin=P3-0
+Removed Pin From Net: NetName=GND Pin=S1-0
+Removed Pin From Net: NetName=GND Pin=S1-0
+Removed Pin From Net: NetName=GND Pin=S2-0
+Removed Pin From Net: NetName=GND Pin=S2-0
+Removed Pin From Net: NetName=GND Pin=S3-0
+Removed Pin From Net: NetName=GND Pin=S3-0
+Added Pin To Net: NetName=LED1 Pin=U4-41
+Added Pin To Net: NetName=LED2 Pin=U4-42
+Added Room: Name=F407VET6£¨Ö÷¿Ø£©
+Added Room: Name=ov7670µçÂ·£¨Æï·É£©

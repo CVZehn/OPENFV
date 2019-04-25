@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=P2 Old Footprint=EDSTLZ1550-4P New Footprint=HDR4X1-2.54
+Change Component Footprint: Designator=P3 Old Footprint=EDSTLZ1550-4P New Footprint=HDR4X1-2.54
+Added Member To Class: ClassName=ov7670电路（骑飞） Member=Component P1 FPC
+Added Room: Name=F407VET6（主控）
+Added Room: Name=ov7670电路（骑飞）

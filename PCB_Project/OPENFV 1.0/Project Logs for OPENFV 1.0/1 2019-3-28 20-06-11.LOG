@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=S1 Old Footprint=SW-SMD1-m New Footprint=Switch-PB-C-M
+Change Component Footprint: Designator=S2 Old Footprint=SW-SMD1-m New Footprint=Switch-PB-C-M
+Change Component Footprint: Designator=S3 Old Footprint=SW-SMD1-m New Footprint=Switch-PB-C-M
+Added Room: Name=F407VET6£¨Ö÷¿Ø£©
+Added Room: Name=ov7670µçÂ·£¨Æï·É£©

@@ -1,0 +1,24 @@
+Added Component: Designator=*(USB-Micro)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R12(R_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R13(R_0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R14(R_0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=5V Pin=*-1
+Added Pin To Net: NetName=5V Pin=*-5
+Added Pin To Net: NetName=5V Pin=R12-2
+Added Pin To Net: NetName=USB_D+ Pin=R13-1
+Added Pin To Net: NetName=USB_D- Pin=R14-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Pin To Net: NetName=Net*_2 Pin=R14-2
+Added Net: Name=Net*_2
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Pin To Net: NetName=Net*_3 Pin=R12-1
+Added Pin To Net: NetName=Net*_3 Pin=R13-2
+Added Net: Name=Net*_3
+Added Member To Class: ClassName=F407VET6（主控） Member=Component * USB-Micro
+Added Member To Class: ClassName=F407VET6（主控） Member=Component R12 RES
+Added Member To Class: ClassName=F407VET6（主控） Member=Component R13 RES
+Added Member To Class: ClassName=F407VET6（主控） Member=Component R14 RES

@@ -1,0 +1,13 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C25
+Change Component Designator: OldDesignator=C? NewDesignator=C26
+Change Component Designator: OldDesignator=C? NewDesignator=C27
+Change Component Designator: OldDesignator=C? NewDesignator=C28
+Change Component Designator: OldDesignator=C? NewDesignator=C29
+Change Component Designator: OldDesignator=C? NewDesignator=C30
+Change Component Designator: OldDesignator=C? NewDesignator=C31
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C25 CAP
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C26 CAP
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C27 CAP
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C28 CAP
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C29 CAP
+Added Member To Class: ClassName=F407VET6（主控） Member=Component C30 CAP
