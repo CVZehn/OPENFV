@@ -1,5 +1,5 @@
 Dependencies for Project 'OV7670', Target 'OV7670': (DO NOT MODIFY !)
-F (.\main.c)(0x5C57FB39)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x5CC81F3B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
 I (..\USER\stm32f4xx.h)(0x542BA483)
 I (..\CORE\core_cm4.h)(0x53C7D530)
@@ -44,10 +44,10 @@ I (..\HARDWARE\LCD\Lcd_Driver.h)(0x5C57DB5A)
 I (..\USMART\usmart.h)(0x528CCEDB)
 I (..\USMART\usmart_str.h)(0x53673F41)
 I (..\HARDWARE\USART2\usart2.h)(0x5373169C)
-I (..\HARDWARE\TIMER\timer.h)(0x5C57F5C8)
+I (..\HARDWARE\TIMER\timer.h)(0x5CC81C4A)
 I (..\HARDWARE\OV7670\ov7670.h)(0x5CC12F17)
 I (..\HARDWARE\OV7670\sccb.h)(0x5CC12F85)
-I (..\HARDWARE\DCMI\dcmi.h)(0x5C41D5B2)
+I (..\HARDWARE\DCMI\dcmi.h)(0x5CC81475)
 I (..\HARDWARE\LCD\QDTFT_demo.h)(0x52A8874E)
 F (.\stm32f4xx_it.c)(0x573D99E8)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f4xx_it.o --omf_browse ..\obj\stm32f4xx_it.crf --depend ..\obj\stm32f4xx_it.d)
 I (stm32f4xx_it.h)(0x5426CDC1)
@@ -197,7 +197,7 @@ I (..\FWLIB\inc\stm32f4xx_dac.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAD)
 I (..\SYSTEM\delay\delay.h)(0x53B7797C)
-F (..\HARDWARE\DCMI\dcmi.c)(0x5C57F6DD)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\dcmi.o --omf_browse ..\obj\dcmi.crf --depend ..\obj\dcmi.d)
+F (..\HARDWARE\DCMI\dcmi.c)(0x5CC81E6D)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\dcmi.o --omf_browse ..\obj\dcmi.crf --depend ..\obj\dcmi.d)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
 I (..\USER\stm32f4xx.h)(0x542BA483)
 I (..\CORE\core_cm4.h)(0x53C7D530)
@@ -233,12 +233,12 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAD)
-I (..\HARDWARE\DCMI\dcmi.h)(0x5C41D5B2)
+I (..\HARDWARE\DCMI\dcmi.h)(0x5CC81475)
 I (..\HARDWARE\LED\led.h)(0x53B53723)
 I (..\HARDWARE\OV7670\ov7670.h)(0x5CC12F17)
 I (..\HARDWARE\OV7670\sccb.h)(0x5CC12F85)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\HARDWARE\TIMER\timer.h)(0x5C57F5C8)
+I (..\HARDWARE\TIMER\timer.h)(0x5CC81C4A)
 I (..\HARDWARE\LCD\Lcd_Driver.h)(0x5C57DB5A)
 F (..\HARDWARE\USART2\usart2.c)(0x53BE8882)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\usart2.o --omf_browse ..\obj\usart2.crf --depend ..\obj\usart2.d)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
@@ -278,8 +278,8 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAD)
 I (..\HARDWARE\USART2\usart2.h)(0x5373169C)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (..\HARDWARE\TIMER\timer.c)(0x5C57ED38)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
-I (..\HARDWARE\TIMER\timer.h)(0x5C57F5C8)
+F (..\HARDWARE\TIMER\timer.c)(0x5CC81E7A)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+I (..\HARDWARE\TIMER\timer.h)(0x5CC81C4A)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
 I (..\USER\stm32f4xx.h)(0x542BA483)
 I (..\CORE\core_cm4.h)(0x53C7D530)
@@ -318,7 +318,7 @@ I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAD)
 I (..\HARDWARE\LED\led.h)(0x53B53723)
 I (..\SYSTEM\usart\usart.h)(0x5397010C)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (..\HARDWARE\OV7670\ov7670.c)(0x5CC12F17)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\ov7670.o --omf_browse ..\obj\ov7670.crf --depend ..\obj\ov7670.d)
+F (..\HARDWARE\OV7670\ov7670.c)(0x5CC81F66)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\ov7670.o --omf_browse ..\obj\ov7670.crf --depend ..\obj\ov7670.d)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
 I (..\USER\stm32f4xx.h)(0x542BA483)
 I (..\CORE\core_cm4.h)(0x53C7D530)
@@ -356,7 +356,7 @@ I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x53DBAFAD)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x53DBAFAD)
 I (..\HARDWARE\OV7670\ov7670.h)(0x5CC12F17)
 I (..\HARDWARE\OV7670\sccb.h)(0x5CC12F85)
-I (..\HARDWARE\OV7670\ov7670config.h)(0x5C57E122)
+I (..\HARDWARE\OV7670\ov7670config.h)(0x5CC807A6)
 I (..\SYSTEM\delay\delay.h)(0x53B7797C)
 I (..\SYSTEM\usart\usart.h)(0x5397010C)
 I (D:\keil\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
@@ -1131,7 +1131,7 @@ I (..\SYSTEM\delay\delay.h)(0x53B7797C)
 I (..\SYSTEM\sys\sys.h)(0x55CC1471)
 I (..\HARDWARE\OV7670\ov7670.h)(0x5CC12F17)
 I (..\HARDWARE\OV7670\sccb.h)(0x5CC12F85)
-I (..\HARDWARE\DCMI\dcmi.h)(0x5C41D5B2)
+I (..\HARDWARE\DCMI\dcmi.h)(0x5CC81475)
 F (..\USMART\usmart_str.c)(0x528CCEDB)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\CORE -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\HARDWARE\LED -I ..\HARDWARE\LCD -I ..\HARDWARE\KEY -I ..\HARDWARE\DCMI -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART2 -I ..\FWLIB\inc -I ..\USMART -I ..\HARDWARE\OV7670 -I ..\HARDWARE\STMFLASH-I.\RTE\_OV7670-ID:\keil\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\keil\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER-o ..\obj\usmart_str.o --omf_browse ..\obj\usmart_str.crf --depend ..\obj\usmart_str.d)
 I (..\USMART\usmart_str.h)(0x53673F41)
 I (..\USER\stm32f4xx.h)(0x542BA483)

@@ -16,8 +16,8 @@
 //淘宝店铺：http://eboard.taobao.com  
 //广州市星翼电子科技有限公司  
 //作者：正点原子 @ALIENTEK
-u16 buff[120] [160] __attribute__ ((at(0X20001000)));
-
+u16 buff[120][160] __attribute__ ((at(0X20001000)));
+u16 buf[2];
 void Mco1_8MHz_Init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStructure;
@@ -37,13 +37,57 @@ void Mco1_8MHz_Init(void)
  RCC_MCO1Config(RCC_MCO1Source_HSI,RCC_MCO1Div_4);  //?????HSI,16M  2??
 
 }
+void OV7670_CreatColor()
+{
+	uint16_t i,j,k = 0;
+	uint16_t color = 0;
+	//????
+	uint16_t buff[320];
+  
+	while(1)
+	{
+		//????(????,????)
+		printf("data:\n");
+		
+		for(i=0;i<240;i++)
+		{
+			printf("L");//???
+			for(j=0;j < 320;j++)//??
+			{
+				if(i < 30)
+				{
+					color = 0xFFFF;
+				}else if(i < 60)
+				{
+					color = 0xF800;//R
+				}else if(i < 90)
+				{
+					color = 0x001F;//B
+				}else if(i < 120)
+				{
+					color = 0x07E0;//G
+				}else if(i < 160)
+				{
+					color = 0x07E0;
+				}
+				buff[j] = color;
+			}
+			//???????
+			for(k=0;k<320;k++)
+			{
+				printf("%04X", buff[k]);//????
+			}
+			printf("\n");
+		}
+	}
+}
 
 int main(void)
 { 
 
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
 	delay_init(168);  //初始化延时函数
-	uart_init(115200);		//初始化串口波特率为115200
+	uart_init(600000);		//初始化串口波特率为115200
 //	usart2_init(42,115200);		//初始化串口2波特率为115200
 //	LED_Init();					//初始化LED 
  	QDTFT_Test_Demo();					//LCD初始化  
@@ -54,14 +98,14 @@ int main(void)
 		printf("OV7670 FAIL:\n");
 		delay_ms(200);
 	}
-	TIM3_Int_Init(10000-1,8400-1);//10Khz计数,1秒钟中断一次
-	OV7670_Window_Set(10,176,120,160);//OV7670设置输出窗口
+	OV7670_Window_Set(12,174,120,160);	//设置窗口	 
+	TIM3_Int_Init(10000-1,8400-1);//10Khz计数,1秒钟中断一次 
 	My_DCMI_Init();			//DCMI配置
-	DCMI_DMA_Init((u32)&buff,19200,DMA_MemoryDataSize_HalfWord,DMA_MemoryInc_Enable);//DCMI DMA配置  
+	DCMI_DMA_Init((u32)&buff,19200,DMA_MemoryDataSize_HalfWord,DMA_MemoryInc_Enable);//DCMI DMA配置
+//    M2M_DMA_Init((u32)&buff,19200,DMA_MemoryDataSize_HalfWord,DMA_MemoryInc_Enable);    
 	DCMI_Start(); 		//启动传输
-//			}
+    
  	while(1)
 	{	
-		
 	}
 }

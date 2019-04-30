@@ -88,9 +88,9 @@ int main(void)
 	delay_init(168);  //初始化延时函数
 	uart_init(115200);		//初始化串口波特率为115200
 	
-// 	Mco1_8MHz_Init();					
+ 	Mco1_8MHz_Init();					
 	
-	QDTFT_Test_Demo();
+//	QDTFT_Test_Demo();
 	while(OV2640_Init())//初始化OV7670
 	{
 //		LCD_ShowString(30,130,240,16,16,"OV7670 ERR");

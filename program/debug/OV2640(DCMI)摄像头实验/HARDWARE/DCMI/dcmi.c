@@ -122,7 +122,6 @@ void DMA2_Stream1_IRQHandler(void)
 		 DMA_ClearFlag(DMA2_Stream1,DMA_FLAG_TCIF1);//清除传输完成中断
 	}    											 
 }  
-//DCMI初始化
 void My_DCMI_Init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStructure;
@@ -130,7 +129,7 @@ void My_DCMI_Init(void)
 
 	
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA|RCC_AHB1Periph_GPIOB|RCC_AHB1Periph_GPIOC|RCC_AHB1Periph_GPIOE, ENABLE);//使能GPIOA B C E 时钟
-  RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_DCMI,ENABLE);//使能DCMI时钟
+	RCC_AHB2PeriphClockCmd(RCC_AHB2Periph_DCMI,ENABLE);//使能DCMI时钟
   //PA4/6初始化设置
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4|GPIO_Pin_6;//PA4/6   复用功能输出
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF; //复用功能输出
@@ -170,7 +169,7 @@ void My_DCMI_Init(void)
 	DCMI_InitStructure.DCMI_HSPolarity = DCMI_HSPolarity_Low;//HSYNC 低电平有效
 	DCMI_InitStructure.DCMI_PCKPolarity= DCMI_PCKPolarity_Rising;//PCLK 上升沿有效
 	DCMI_InitStructure.DCMI_SynchroMode= DCMI_SynchroMode_Hardware;//硬件同步HSYNC,VSYNC
-	DCMI_InitStructure.DCMI_VSPolarity=DCMI_VSPolarity_Low;//VSYNC 低电平有效
+	DCMI_InitStructure.DCMI_VSPolarity=DCMI_VSPolarity_High;//VSYNC 低电平有效
 	DCMI_Init(&DCMI_InitStructure);
 
 	DCMI_ITConfig(DCMI_IT_FRAME,ENABLE);//开启帧中断 

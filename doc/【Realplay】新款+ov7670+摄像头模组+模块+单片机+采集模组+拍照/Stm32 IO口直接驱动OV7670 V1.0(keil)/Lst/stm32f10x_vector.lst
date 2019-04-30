@@ -416,9 +416,12 @@ ARM Macro Assembler    Page 7
               A0000010 
               A0000014 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork -o.\Obj\stm32f10x
-_vector.o -IC:\Keil\ARM\INC -IC:\Keil\ARM\INC\ST\STM32F10x --predefine="__MICRO
-LIB SETA 1" --list=.\Lst\stm32f10x_vector.lst stm32f10x_vector.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\obj\stm32f10x_vector.d -o.\obj\stm32f10x_vector.o -I.\RTE\_ADC -
+ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include -ID:\keil\ARM\PACK\Keil\ST
+M32F1xx_DFP\2.1.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="_
+_UVISION_VERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_HD
+ SETA 1" --list=.\lst\stm32f10x_vector.lst stm32f10x_vector.s
 
 
 
@@ -1190,4 +1193,4 @@ Symbol: __main
       At line 295 in file stm32f10x_vector.s
 Comment: __main used once
 70 symbols
-406 symbols in table
+420 symbols in table

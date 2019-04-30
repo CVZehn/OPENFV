@@ -30,14 +30,14 @@ u8 OV2640_Init(void)
 	//设置IO     	   
   GPIO_InitTypeDef  GPIO_InitStructure;
 
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOE, ENABLE);
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
   //GPIOG9,15初始化设置
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9|GPIO_Pin_15;//PG9,15推挽输出
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5|GPIO_Pin_6;//PG9,15推挽输出
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT; //推挽输出
   GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;//100MHz
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-  GPIO_Init(GPIOE, &GPIO_InitStructure);//初始化
+  GPIO_Init(GPIOD, &GPIO_InitStructure);//初始化
  
  	OV2640_PWDN=0;	//POWER ON
 	delay_ms(10);
@@ -69,14 +69,14 @@ u8 OV2640_Init(void)
 	SCCB_WR_Reg(OV2640_DSP_RA_DLMT, 0x01);
 	SCCB_WR_Reg(OV2640_SENSOR_COM7, 0x80);
  	//初始化 OV2640,采用SXGA分辨率(1600*1200)  
-	for(i=0;i<sizeof(ov2640_svga_init_reg_tbl)/2;i++)
+	for(i=0;i<sizeof(OV2640_QQVGA)/2;i++)
 	{
-	   	SCCB_WR_Reg(ov2640_svga_init_reg_tbl[i][0],ov2640_svga_init_reg_tbl[i][1]);
+	   	SCCB_WR_Reg(OV2640_QQVGA[i][0],OV2640_QQVGA[i][1]);
  	} 
 	
-	for(i=0;i<sizeof(ov2640_svga_init_reg_tbl)/2;i++)
+	for(i=0;i<sizeof(OV2640_QQVGA)/2;i++)
 	{
-	   	SCCB_WR_Reg(ov2640_svga_init_reg_tbl[i][0],ov2640_svga_init_reg_tbl[i][1]);
+	   	SCCB_WR_Reg(OV2640_QQVGA[i][0],OV2640_QQVGA[i][1]);
  	} 
 	
 

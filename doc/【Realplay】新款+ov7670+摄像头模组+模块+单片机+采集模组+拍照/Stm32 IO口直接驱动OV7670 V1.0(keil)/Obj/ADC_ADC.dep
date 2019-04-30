@@ -1,0 +1,16 @@
+Dependencies for Project 'ADC', Target 'ADC': (DO NOT MODIFY !)
+F (.\source\delay.c)(0x4B4D84D2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\delay.o --omf_browse .\obj\delay.crf --depend .\obj\delay.d)
+I (source\delay.h)(0x505D6BD3)
+F (.\source\ili9320.c)(0x505D6DF7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\ili9320.o --omf_browse .\obj\ili9320.crf --depend .\obj\ili9320.d)
+F (.\source\SCCB.c)(0x4B474DFC)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\sccb.o --omf_browse .\obj\sccb.crf --depend .\obj\sccb.d)
+I (.\include\SCCB.h)(0x4BE63264)
+I (source\delay.h)(0x505D6BD3)
+F (.\source\ov7670.c)(0x505D76AA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\ov7670.o --omf_browse .\obj\ov7670.crf --depend .\obj\ov7670.d)
+I (.\include\OV7670.h)(0x505D75C7)
+I (.\include\SCCB.h)(0x4BE63264)
+I (source\delay.h)(0x505D6BD3)
+F (.\source\main.c)(0x505D768A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (.\source\stm32f10x_it.c)(0x4A8C11E8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\source -I .\include-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_HD-o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
+I (.\include\stm32f10x_it.h)(0x48D8453A)
+F (.\source\STM32F10xR.LIB)(0x48F3F83C)()
+F (.\stm32f10x_vector.s)(0x4B2F8D10)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ADC-ID:\keil\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-ID:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F10X_HD SETA 1"--list .\lst\stm32f10x_vector.lst --xref -o .\obj\stm32f10x_vector.o --depend .\obj\stm32f10x_vector.d)

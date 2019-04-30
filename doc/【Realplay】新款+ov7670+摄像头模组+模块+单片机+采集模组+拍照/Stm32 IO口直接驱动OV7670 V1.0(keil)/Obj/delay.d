@@ -1,2 +1,2 @@
-.\Obj\delay.o: source\delay.c
-.\Obj\delay.o: source\delay.h
+.\obj\delay.o: source\delay.c
+.\obj\delay.o: source\delay.h

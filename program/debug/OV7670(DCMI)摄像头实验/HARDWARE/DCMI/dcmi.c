@@ -18,7 +18,9 @@
 //All rights reserved									  
 ////////////////////////////////////////////////////////////////////////////////// 	 
 
+u16 bufsta=0;
 u16 i,k,H,L,j;
+
 DCMI_InitTypeDef DCMI_InitStructure;
 
 //DCMI DMA配置
@@ -79,17 +81,17 @@ void M2M_DMA_Init(u32 DMA_Memory0BaseAddr,u16 DMA_BufferSize,u32 DMA_MemoryDataS
 	while (DMA_GetCmdStatus(DMA2_Stream0) != DISABLE){}//等待DMA2_Stream1可配置 
 	
   /* 配置 DMA Stream */
-  DMA_InitStructure.DMA_Channel = DMA_Channel_1;  //通道1 DCMI通道 
-  DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)&DCMI->DR;//外设地址为:DCMI->DR
+  DMA_InitStructure.DMA_Channel = DMA_Channel_0;  //通道1 DCMI通道 
+  DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)buf[1];//外设地址为:DCMI->DR
   DMA_InitStructure.DMA_Memory0BaseAddr = DMA_Memory0BaseAddr;//DMA 存储器0地址
-  DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;//外设到存储器模式
+  DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToMemory;//外设到存储器模式
   DMA_InitStructure.DMA_BufferSize = DMA_BufferSize;//数据传输量 
   DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;//外设非增量模式
   DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc;//存储器增量模式
-  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Word;//外设数据长度:32位
+  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;//外设数据长度:32位
   DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize;//存储器数据长度 
   DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;// 使用循环模式 
-  DMA_InitStructure.DMA_Priority = DMA_Priority_High;//高优先级
+  DMA_InitStructure.DMA_Priority = DMA_Priority_Medium;//高优先级
   DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Enable; //FIFO模式        
   DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;//使用全FIFO 
   DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;//外设突发单次传输
@@ -99,10 +101,10 @@ void M2M_DMA_Init(u32 DMA_Memory0BaseAddr,u16 DMA_BufferSize,u32 DMA_MemoryDataS
 	DMA_ITConfig(DMA2_Stream0,DMA_IT_TC,ENABLE);
 	NVIC_InitStructure.NVIC_IRQChannel=	DMA2_Stream0_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0;
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority=0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority=1;
 	NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
 	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器、
-	
+//	
 } 
 void DMA2_Stream0_IRQHandler(void)
 {        
@@ -186,6 +188,7 @@ void DCMI_Start(void)
 { 
 	DCMI_CaptureCmd(ENABLE);//DCMI捕获使能  
 	DMA_Cmd(DMA2_Stream1, ENABLE);//开启DMA2,Stream1 
+	DMA_Cmd(DMA2_Stream0, ENABLE);//开启DMA2,Stream1 
 }
 //DCMI,关闭传输
 void DCMI_Stop(void)
@@ -199,28 +202,20 @@ void DCMI_IRQHandler(void)
 {
 	if(DCMI_GetITStatus(DCMI_IT_LINE)==SET)//捕获到行
 	{
-		DCMI_Stop();
+        DCMI_Stop();
 		DCMI_ClearITPendingBit(DCMI_IT_LINE);//清除中断	
-	
-		j=0;
-		printf("data:\n");
-		for(i=0;i<=120;i++)
-		{
-			for(k=0;k<160;k++)
-			{
-			    if(buff[i][k]>0X3431)
-				{
-					buff[i][k]=0XFFFF;
-				}
-				else
-				{
-					buff[i][k]=0;
-				}
-				Gui_DrawPoint(i,k,buff[i][k]);
-			}
-			printf("\n");
-		}
-		DCMI_Start();
+        
+            printf("data:\n");
+            for(i=0;i<240;i++)
+            {
+                printf("L");
+                for(j=0;j < 320;j++)
+                {
+                    printf("%04X",buff[i][j]);
+                }
+                printf("\n");
+            }
+        DCMI_Start();
 	}
 	
 } 
